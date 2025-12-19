@@ -1,13 +1,105 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-16416",
-    "name": "Plywood_4_by_8",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-16416",
+  "name": "Plywood_4_by_8",
+  "ioValues": [
+    {
+      "name": "WoodThick",
+      "ioValue": 19.05,
+      "currentEquation": "19.05"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-16417"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.01815,
+      "y": 0.2424942263279446,
+      "uniqueID": "id-16419",
+      "name": "WoodThick",
+      "type": "number"
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.0598705501618123,
+      "y": 0.4965357967667437,
+      "uniqueID": "id-16422",
+      "name": "Four",
+      "value": 1219
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.0598705501618123,
+      "y": 0.6443418013856812,
+      "uniqueID": "id-16424",
+      "name": "Eight",
+      "value": 2438
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.16612729234088458,
+      "y": 0.5381062355658198,
+      "uniqueID": "id-16426",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 1219
+        },
+        {
+          "name": "y length",
+          "ioValue": 2438
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.2394822006472492,
+      "y": 0.5265588914549654,
+      "uniqueID": "id-16430",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 19.05
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-16419",
+      "ap2ID": "id-16430"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-16422",
+      "ap2ID": "id-16426"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-16424",
+      "ap2ID": "id-16426"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-16426",
+      "ap2ID": "id-16430"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-16430",
+      "ap2ID": "id-16417"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
